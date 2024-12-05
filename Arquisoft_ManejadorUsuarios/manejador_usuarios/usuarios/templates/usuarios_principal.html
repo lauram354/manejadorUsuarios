@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Usuarios</title>
+</head>
+<body>
+    <h1>Manejador de Usuarios</h1>
+    <button onclick="location.href='/usuarios/formulario_usuario/'">Crear Usuario</button>
+    <button onclick="location.href='/usuarios/listar_usuarios/'">Consultar Todos los Usuarios</button>
+    <button onclick="consultarPorID()">Consultar Usuario por ID</button>
+
+    <script>
+        function consultarPorID() {
+            var id = prompt("Ingrese el ID del usuario:");
+            if (id) {
+                location.href = '/usuarios/listar_usuarios/' + id + '/';
+            }
+        }
+    </script>
+</body>
+</html>

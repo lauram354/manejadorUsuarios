@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crear un nuevo usuario</title>
+</head>
+<body>
+    <h2>Crear un nuevo usuario</h2>
+    <form action="/usuarios/crear_usuario/" method="POST">
+        <label>Nombre de Usuario:</label>
+        <input type="text" name="usuario" required /><br><br>
+
+        <label>Correo:</label>
+        <input type="email" name="correo" required /><br><br>
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required /><br><br>
+
+        <label>Contraseña:</label>
+        <input type="password" name="contrasenia" required /><br><br>
+
+        <label>Rol:</label>
+        <input type="text" name="rol" required /><br><br>
+
+        <label>Institución ID:</label>
+        <input type="number" name="institucion_id" required /><br><br>
+
+        <button type="submit">Crear Usuario</button>
+    </form>
+</body>
+</html>
